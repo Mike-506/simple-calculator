@@ -1,0 +1,30 @@
+.App {
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+html, 
+body {
+  background-color: aqua;
+}
+
+.container {
+  width: 400px;
+  height: auto;
+  padding: 15px;
+  background-color: #99c9ff;
+  border: 7px solid black;
+  border-radius: 20px;
+  margin: 2rem 2rem 0 2rem;
+}
+
+.row {
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
