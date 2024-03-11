@@ -15,7 +15,8 @@ function App() {
 
   const result = () => {
     if (input) {
-      setInput(evaluate(input))
+      const res = evaluate(input);
+      setInput(Number(res).toFixed(6))
     } else {
       alert('Please input a value to make some math') 
     }
@@ -24,7 +25,7 @@ function App() {
   return (
     <div className='App'>
       <div className='container'>
-        <Screen input ={input} />
+        <Screen input = {input}/>
         <div className='row'>
           <Button handleClick={addInput}>1</Button>
           <Button handleClick={addInput}>2</Button>
